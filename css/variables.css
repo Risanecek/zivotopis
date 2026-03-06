@@ -1,0 +1,16 @@
+:root {
+    --bg-color: #fffcec;
+    --primary-color: #ffcc00;
+    --accent-color: #ffbf00;
+    --text-color: #000000;
+    --white-stuff: #fff;
+    --base-font-size: 1rem;   
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 1.5rem;
+    --z-index-bg: 1;
+    --z-index-trail: 2;
+    --z-index-content: 10;
+    --z-index-cursor: 1000;
+    --z-index-loader: 2000;
+
+}

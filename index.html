@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    script-src 'self' https://cdn.jsdelivr.net https://cdn.credly.com; 
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
+    font-src 'self' https://cdnjs.cloudflare.com; 
+    img-src 'self' data: https://images.credly.com https://picsum.photos https://grainy-gradients.vercel.app;
+    frame-src https://www.credly.com;
+    ">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Richard Tučný | Životopis</title>
+    <link rel="icon" href="src/img/shield.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="progress-ring"></div>
+        <div id="progress-text">0%</div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <canvas id="trail-canvas"></canvas>
+    <div id="tsparticles"></div>
+    <div class="noise"></div>
+
+    <main class="cv-content">
+        <section class="transparent-zone">
+            <header class="profile-header">
+                <div class="photo-container">
+                    <img src="src/img/profile-photo.webp" alt="Zdrávím, tak tohle jsem já" class="profile-img">
+                    <div class="photo-frame"></div>
+                </div>
+                <div class="hero-text">
+                    <h1>RICHARD TUČNÝ</h1>
+                    <br>  
+                    <div class="system-stats">
+                        <span><i class="fa-solid fa-calendar"></i> 30.03.2004</span>
+                    <!--                        <span><i class="fa-solid  fa-phone"></i> +420 123 456 789</span>-->
+                        <span title="bez [@] kvůli ochraně před spamem"><i class="fa-solid fa-envelope"></i> richard.testovaci[@]seznam.cz</span>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <div class="solid-zone">
+            <section class="section">
+                <h2 class="section-label">01 / O_MNĚ</h2>
+                <div class="bio-paragraph">
+                    <p>Jsem analyticky zaměřený student informatiky. Zajímám se o síťovou infrastrukturu, webovou implementaci a AI. Jsem týmový hráč, rád se učím novým věcem které mě posouvají vpřed.</p>
+                </div>
+            </section>
+            <br><br>
+            <section class="section">
+                <h2 class="section-label">02 / STUDIUM</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="src/img/fim-uhk.webp" alt="Logo Fakulty informatiky a managementu univerzity Hradec Králové" class="timeline-logo">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Univerzita Hradec Králové</h3>
+                            <h4>Fakulta informatiky a managementu</h4>
+                            <p>Informační a síťová bezpečnost // 2025 - současnost</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="src/img/upce-fei.webp" alt="Logo Fakulty elektrotechniky a informatiky univerzity Pardubice" class="timeline-logo">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Univerzita Pardubice</h3>
+                            <h4>Fakulta elektrotechniky a informatiky</h4>
+                            <p>Informační technologie // 2023 - 2025</p>
+                            <p>(Přechod na specializaci Informační a síťová bezpečnost)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="src/img/vda.webp" alt="Logo Střední školy technické a dopravní Gustava Habrmana Česká Třebová" class="timeline-logo">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Střední škola technická a dopravní</h3>
+                            <h4>Gustava Habrmana Česká Třebová</h4>
+                            <p>Informační technologie // 2019 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-label">03 / SCHOPNOSTI_A_DOVEDNOSTI</h2>
+                <div class="skills-grid-container">
+                    <div class="skills-column">
+                        <h4>CERTIFIKÁTY</h4>
+                        <div class="skills-list">
+                            <a target="_blank" href="https://www.credly.com/badges/4613d508-a8b6-4d75-ac36-afa85ab47c3a/public_url" class="skill-item cert-link"><i class="fa-solid fa-file-shield"></i> CCNA: Switching, Routing, and Wireless Essentials</a>
+                            <a target="_blank" href="https://www.credly.com/badges/7ea134c8-7b8b-4b43-9aea-5f8eb00cfed0/public_url" class="skill-item cert-link"><i class="fa-solid fa-network-wired"></i> CCNA: Introduction to Networks</a>
+                            <a target="_blank" href="src/certification/clmsCertificate (2).pdf" class="skill-item cert-link"><i class="fa-solid fa-database"></i> Oracle: Database Programming with SQL</a>
+                            <a target="_blank" href="src/certification/clmsCertificate.pdf" class="skill-item cert-link"><i class="fa-solid fa-code-branch"></i> Oracle: Database Design</a>
+                            <a target="_blank" href="src/certification/clmsCertificate (1).pdf" class="skill-item cert-link"><i class="fa-solid  fa-table"></i> Oracle: Database Foundations</a>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h4>DALŠÍ DOVEDNOSTI</h4>
+                        <div class="skills-list">
+                            <div class="skill-item"><i class="fa-solid fa-language"></i> Angličtina: Pokročilý (bez certifikátu)</div>
+                            <div class="skill-item"><i class="fa-solid fa-language"></i> Němčina: Základy</div>
+                            <div class="skill-item"><i class="fa-solid fa-car-side"></i> Řidičský průkaz: Skupina B</div>
+                            <div class="skill-item"><i class="fa-brands fa-linux"></i> OS Windows, OS Linux (desktop)</div>
+                            <div class="skill-item"><i class="fa-brands fa-windows"></i> Windows server</div>
+                            <div class="skill-item"><i class="fa-solid fa-code"></i> Elementární znalost SQL, Java</div>
+                            <div class="skill-item"><i class="fa-solid  fa-shield"></i> Síťová analýza: Wireshark</div>
+                            <div class="skill-item"><i class="fa-solid  fa-birthday-cake"></i> Pečení muffinů :)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-label">04 / PRACOVNÍ_ZKUŠENOSTI</h2>
+                <div class="work-cards-grid">
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">05/2025 – 02/2026</span>
+                                <h3>eBrána s.r.o.</h3>
+                                <p class="pos-name">Tvůrce webů a e-shopů - junior</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Milheimova 1010, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/ebrana.webp')" alt="eBRÁNA">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Implementace webových stránek a e-shopů, správa obsahu v administraci. Kódování v jazyku CSS. Technická podpora klientům po e-mailu a telefonicky.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">04/2025 – 09/2025</span>
+                                <h3>Kaufland</h3>
+                                <p class="pos-name">Obslužný pult | Pomocné práce</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Bělehradská 628, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/kaufland.webp')" alt="Kaufland">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Výdej sortimentu u obslužného pultu, zajištění čerstvosti zboží, úklidové práce. Doplňování zboží, obsluha paletového vozíku.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2023 – 08/2023</span>
+                                <h3>Penny Market</h3>
+                                <p class="pos-name">Pokladní | Pomocné práce</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Tyršova 1001, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/penny.webp')" alt="Penny">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Obsluha pokladny, doplňování zboží, obsluha paletového vozíku a zajištění čistoty prodejny.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2022 – 08/2022</span>
+                                <h3>Albert</h3>
+                                <p class="pos-name">Pokladní | Pomocné práce</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Palackého tř. 2748, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/albert.webp')" alt="Albert">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Obsluha pokladny, doplňování zboží, obsluha paletového vozíku a zajištění čistoty prodejny.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2020 – 08/2020</span>
+                                <h3>SAMPRO s.r.o.</h3>
+                                <p class="pos-name">Pomocná montáž</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Šaffova 37, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/sampro.webp')" alt="SAMPRO">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Technická příprava a balení komponentů a držáků pro satelitní a bezdrátové připojení.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2019 – 08/2019</span>
+                                <h3>SAMPRO s.r.o.</h3>
+                                <p class="pos-name">Pomocná montáž</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Šaffova 37, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('src/img/sampro.webp')" alt="SAMPRO">
+                                <div class="back-content">
+                                    <h3>NÁPLŇ PRÁCE</h3>
+                                    <p>Technická příprava a balení komponentů a držáků pro satelitní a bezdrátové připojení.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="text-align: center;">
+                <a href="zajmy.html" class="magnetic-btn card-style-btn">ZOBRAZIT MOJE ZÁJMY</a>
+                <div id="system-status" class="status"></div>
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>SPOJENÍ</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/richard-ondruch"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:richard.testovaci@seznam.cz"><i class="fa-solid fa-envelope"></i></a>
+                            <!--                            <a href="tel:+420123456789"><i class="fa-solid fa-phone"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>LOKALITA</h4>
+                        <p>Pardubice</p>
+                    </div>
+                   <div class="footer-col">
+                        <h4>ODKAZY</h4>
+                        <!--switching routing-->
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4613d508-a8b6-4d75-ac36-afa85ab47c3a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>                        <!--introduction to networks-->
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7ea134c8-7b8b-4b43-9aea-5f8eb00cfed0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div><span class="status-dot"></span> Webhosting zprostředkovaný pomoci <a href="https://github.com">github.com</a> | Ikony <a href="https://fontawesome.com/">fontawesome.com</a> | Pozadí tsparticles <a href="https://particles.js.org/">particles.js.org</a></div>
+                    <div><span class="status-dot"></span> </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <div id="custom-popup" class="popup-overlay">
+  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

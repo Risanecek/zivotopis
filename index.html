@@ -6,10 +6,11 @@
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
     script-src 'self' https://cdn.jsdelivr.net https://cdn.credly.com https://www.googletagmanager.com; 
+    script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com;
     style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
     font-src 'self' https://cdnjs.cloudflare.com; 
-    img-src 'self' data: https://images.credly.com https://www.google-analytics.com;
-    connect-src 'self' https://www.google-analytics.com;
+    img-src 'self' data: https://images.credly.com https://www.google-analytics.com https://www.googletagmanager.com;
+    connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;
     frame-src https://www.credly.com;
     ">
     <meta name="referrer" content="strict-origin-when-cross-origin">

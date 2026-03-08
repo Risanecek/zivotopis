@@ -11,15 +11,6 @@
     pointer-events: none;
 }
 
-.noise {
-    position: fixed;
-    inset: 0;
-    z-index: 5;
-    background: url('https://grainy-gradients.vercel.app/noise.svg');
-    opacity: 0.03;
-    pointer-events: none;
-}
-
 ::-webkit-scrollbar {
     width: 0.75rem;
 }

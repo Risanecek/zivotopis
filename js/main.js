@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = 'rgba(250, 204, 21, 0.3)';
+        ctx.strokeStyle = '#facc154d';
         ctx.lineWidth = 2;
         ctx.beginPath();
         for (let i = 0; i < points.length; i++) ctx.lineTo(points[i].x, points[i].y);

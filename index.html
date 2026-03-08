@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
-    script-src 'self' https://cdn.jsdelivr.net https://cdn.credly.com; 
+    script-src 'self' https://cdn.jsdelivr.net https://cdn.credly.com https://www.googletagmanager.com; 
     style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
     font-src 'self' https://cdnjs.cloudflare.com; 
-    img-src 'self' data: https://images.credly.com https://picsum.photos https://grainy-gradients.vercel.app;
+    img-src 'self' data: https://images.credly.com https://www.google-analytics.com;
+    connect-src 'self' https://www.google-analytics.com;
     frame-src https://www.credly.com;
     ">
     <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://risanecek.github.io/zivotopis/rkdo/">
+    <meta property="og:title" content="Životopis | Richard Ondrůch">
+    <meta property="og:description" content="Student, ajťák, milovník muffinů a sportu. Profesionální házeč hrachu na stěnu.">
+    <meta property="og:image" content="https://risanecek.github.io/zivotopis/rkdo/src/img/nahledovka.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="google-site-verification" content="KXHIw7sms1EO35R6Yx9Mvfa_LgS7Tw4ajAvgyvi17oI" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6XT2L2P69"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X6XT2L2P69');
+    </script>
+
     <title>Richard Ondrůch | Životopis</title>
     <link rel="icon" href="src/img/shield.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -29,7 +48,6 @@
     <div id="cursor-outline"></div>
     <canvas id="trail-canvas"></canvas>
     <div id="tsparticles"></div>
-    <div class="noise"></div>
 
     <main class="cv-content">
         <section class="transparent-zone">

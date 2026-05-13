@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdn.credly.com https://www.googletagmanager.com; 
+    script-src-elem 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdn.credly.com https://www.googletagmanager.com;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
+    font-src 'self' https://cdnjs.cloudflare.com; 
+    img-src 'self' data: https://images.credly.com https://www.google-analytics.com https://www.googletagmanager.com;
+    connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://analytics.google.com https://www.googletagmanager.com;
+    frame-src https://www.credly.com;
+    ">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://risanecek.github.io/zivotopis/">
+    <meta property="og:title" content="Resume | Richard Ondrůch">
+    <meta property="og:description" content="Student, IT guy, muffin lover, and sports enthusiast. Professional talker to a brick wall.">
+    <meta property="og:image" content="https://risanecek.github.io/zivotopis/src/img/nahledovka.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resume | Richard Ondrůch">
+    <meta name="twitter:description" content="Student, IT guy, muffin lover, and sports enthusiast. Professional talker to a brick wall.">
+    <meta name="twitter:image" content="https://risanecek.github.io/zivotopis/src/img/nahledovka.webp">
+
+    <meta name="google-site-verification" content="KXHIw7sms1EO35R6Yx9Mvfa_LgS7Tw4ajAvgyvi17oI" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6XT2L2P69"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X6XT2L2P69');
+    </script>
+
+    <title>Richard Ondrůch | Resume</title>
+    <link rel="icon" href="../src/img/shield.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="progress-ring"></div>
+        <div id="progress-text">0%</div>
+    </div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <canvas id="trail-canvas"></canvas>
+    <div id="tsparticles"></div>
+    <main class="cv-content">
+        <nav aria-label="Language selection" class="language-switch">
+            <ul>
+                <li><a href="../index.html" title="Czech">🇨🇿</a></li>
+                <li><a href="./index.html" class="active" title="English">🇬🇧</a></li>
+                <li><a href="../de/index.html" title="German">🇩🇪</a></li>
+            </ul>
+        </nav>
+        <section class="transparent-zone">
+            <header class="profile-header">
+                <div class="photo-container">
+                    <img src="../src/img/profile-photo.webp" alt="Hello, this is me" class="profile-img" loading="lazy">
+                    <div class="photo-frame"></div>
+                </div>
+                <div class="hero-text">
+                    <h1>RICHARD ONDRŮCH</h1>
+                    <br>  
+                    <div class="system-stats">
+                        <span><i class="fa-solid fa-calendar"></i> 30.03.2004</span>
+                    <!--                        <span><i class="fa-solid  fa-phone"></i> +420 123 456 789</span>-->
+                        <span title="without [@] due to spam protection"><i class="fa-solid fa-envelope"></i> richardondruch[@]email.cz</span>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <div class="solid-zone">
+            <section class="section">
+                <h2 class="section-label">01 / ABOUT_ME</h2>
+                <div class="bio-paragraph">
+                    <p>I am an analytically focused computer science student. I am interested in network infrastructure, web implementation, and AI. I am a team player, eager to learn new things that move me forward.</p>
+                </div>
+            </section>
+            <br><br>
+            <section class="section">
+                <h2 class="section-label">02 / EDUCATION</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="../src/img/fim-uhk.webp" alt="Logo of the Faculty of Informatics and Management, University of Hradec Králové" class="timeline-logo" loading="lazy">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>University of Hradec Králové</h3>
+                            <h4>Faculty of Informatics and Management</h4>
+                            <p>Information and Network Security // 2025 - present</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="../src/img/upce-fei.webp" alt="Logo of the Faculty of Electrical Engineering and Informatics, University of Pardubice" class="timeline-logo" loading="lazy">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>University of Pardubice</h3>
+                            <h4>Faculty of Electrical Engineering and Informatics</h4>
+                            <p>Information Technology // 2023 - 2025</p>
+                            <p>(Transition to Information and Network Security specialization)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo-container">
+                            <img src="../src/img/vda.webp" alt="Logo of the Secondary Technical and Transport School of Gustav Habrman in Česká Třebová" class="timeline-logo" loading="lazy">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Secondary Technical and Transport School</h3>
+                            <h4>Gustav Habrman Česká Třebová</h4>
+                            <p>Information Technology // 2019 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-label">03 / SKILLS_AND_ABILITIES</h2>
+                <div class="skills-grid-container">
+                    <div class="skills-column">
+                        <h4>CERTIFICATIONS</h4>
+                        <div class="skills-list">
+                            <a target="_blank" href="https://www.credly.com/badges/4613d508-a8b6-4d75-ac36-afa85ab47c3a/public_url" class="skill-item cert-link"><i class="fa-solid fa-file-shield"></i> CCNA: Switching, Routing, and Wireless Essentials</a>
+                            <a target="_blank" href="https://www.credly.com/badges/7ea134c8-7b8b-4b43-9aea-5f8eb00cfed0/public_url" class="skill-item cert-link"><i class="fa-solid fa-network-wired"></i> CCNA: Introduction to Networks</a>
+                            <a target="_blank" href="https://www.credly.com/badges/229dd8cd-60fe-47e7-aca1-6a3f4f7d98cb/public_url" class="skill-item cert-link"><i class="fa-brands fa-android"></i> Operating Systems Basics</a>
+                            <a target="_blank" href="https://www.credly.com/badges/a7d3ec01-8fe9-4afb-a17e-e6bc6718459d/public_url" class="skill-item cert-link"><i class="fa-solid fa-headset"></i> Operating Systems Support</a>
+                            <a target="_blank" href="src/certification/clmsCertificate (2).pdf" class="skill-item cert-link"><i class="fa-solid fa-database"></i> Oracle: Database Programming with SQL</a>
+                            <a target="_blank" href="src/certification/clmsCertificate.pdf" class="skill-item cert-link"><i class="fa-solid fa-code-branch"></i> Oracle: Database Design</a>
+                            <a target="_blank" href="src/certification/clmsCertificate (1).pdf" class="skill-item cert-link"><i class="fa-solid  fa-table"></i> Oracle: Database Foundations</a>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h4>OTHER SKILLS</h4>
+                        <div class="skills-list">
+                            <div class="skill-item"><i class="fa-solid fa-language"></i> English: Advanced (without certificate)</div>
+                            <div class="skill-item"><i class="fa-solid fa-language"></i> German: Basics</div>
+                            <div class="skill-item"><i class="fa-solid fa-car-side"></i> Driving License: Category B</div>
+                            <div class="skill-item"><i class="fa-brands fa-linux"></i> OS Windows, OS Linux (desktop)</div>
+                            <div class="skill-item"><i class="fa-brands fa-windows"></i> Windows server</div>
+                            <div class="skill-item"><i class="fa-solid fa-code"></i> Elementary knowledge of SQL, Java</div>
+                            <div class="skill-item"><i class="fa-solid  fa-shield"></i> Network analysis: Wireshark</div>
+                            <div class="skill-item"><i class="fa-solid  fa-birthday-cake"></i> Baking muffins :)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-label">04 / WORK_EXPERIENCE</h2>
+                <div class="work-cards-grid">
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">05/2025 – 02/2026</span>
+                                <h3>eBrána s.r.o.</h3>
+                                <p class="pos-name">Web and E-shop Developer - Junior</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Milheimova 1010, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/ebrana.webp')" alt="eBRÁNA">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Implementation of websites and e-shops, content management. CSS coding. Technical support for clients via e-mail and phone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">04/2025 – 09/2025</span>
+                                <h3>Kaufland</h3>
+                                <p class="pos-name">Service Counter | Auxiliary Tasks</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Bělehradská 628, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/kaufland.webp')" alt="Kaufland">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Dispensing assortment at the service counter, ensuring product freshness, cleaning tasks. Restocking, pallet jack operation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2023 – 08/2023</span>
+                                <h3>Penny Market</h3>
+                                <p class="pos-name">Cashier | Auxiliary Tasks</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Tyršova 1001, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/penny.webp')" alt="Penny">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Cash register operation, restocking, pallet jack operation, and ensuring store cleanliness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2022 – 08/2022</span>
+                                <h3>Albert</h3>
+                                <p class="pos-name">Cashier | Auxiliary Tasks</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Palackého tř. 2748, Pardubice</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/albert.webp')" alt="Albert">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Cash register operation, restocking, pallet jack operation, and ensuring store cleanliness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2020 – 08/2020</span>
+                                <h3>SAMPRO s.r.o.</h3>
+                                <p class="pos-name">Auxiliary Assembly</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Šaffova 37, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/sampro.webp')" alt="SAMPRO">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Technical preparation and packaging of components and mounts for satellite and wireless connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-inner">
+                            <div class="card-face front">
+                                <span class="card-date">07/2019 – 08/2019</span>
+                                <h3>SAMPRO s.r.o.</h3>
+                                <p class="pos-name">Auxiliary Assembly</p>
+                                <p class="address"><i class="fa-solid fa-location-arrow"></i> Šaffova 37, Polička</p>
+                            </div>
+                            <div class="card-face back" style="background-image: url('../src/img/sampro.webp')" alt="SAMPRO">
+                                <div class="back-content">
+                                    <h3>JOB DESCRIPTION</h3>
+                                    <p>Technical preparation and packaging of components and mounts for satellite and wireless connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="text-align: center;">
+                <a href="zajmy.html" class="magnetic-btn card-style-btn">SHOW MY INTERESTS</a>
+                <div id="system-status" class="status"></div>
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>CONTACT</h4>
+                        <div class="social-icons">
+                            <a target="_blank" href="https://www.linkedin.com/in/richard-ondruch"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:richardondruch@email.cz"><i class="fa-solid fa-envelope"></i></a>
+                            <!--                            <a href="tel:+420123456789"><i class="fa-solid fa-phone"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>LOCATION</h4>
+                        <p>Pardubice</p>
+                    </div>
+                   <div class="footer-col">
+                        <h4>LINKS</h4>
+                        <!--switching routing-->
+                        <div data-iframe-width="75" data-iframe-height="135" data-share-badge-id="4613d508-a8b6-4d75-ac36-afa85ab47c3a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>                        <!--introduction to networks-->
+                        <div data-iframe-width="75" data-iframe-height="135" data-share-badge-id="7ea134c8-7b8b-4b43-9aea-5f8eb00cfed0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="75" data-iframe-height="135" data-share-badge-id="229dd8cd-60fe-47e7-aca1-6a3f4f7d98cb" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="75" data-iframe-height="135" data-share-badge-id="a7d3ec01-8fe9-4afb-a17e-e6bc6718459d" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>                
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div><span class="status-dot"></span> Web hosting provided by <a target="_blank" href="https://github.com">github.com</a> | Icons <a target="_blank" href="https://fontawesome.com/">fontawesome.com</a> | Background by tsparticles <a target="_blank" href="https://particles.js.org/">particles.js.org</a></div>
+                    <div><span class="status-dot"></span> </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <div id="custom-popup" class="popup-overlay">
+  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

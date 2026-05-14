@@ -142,17 +142,30 @@
         margin-top: 1rem;
     }
 }
+.section{
+    & .section-label {
+        display: block;
+        font-size: var(--h2-font-size);
+        font-family: monospace;
+        font-weight: 900;
+        color: var(--accent-color);
+        margin-bottom: 3rem;
+        border-bottom: 0.25rem solid var(--primary-color);
+        width: fit-content;
+        padding-bottom: 0.5rem;
+    }
 
-.section-label {
-    display: block;
-    font-size: var(--h2-font-size);
-    font-family: monospace;
-    font-weight: 900;
-    color: var(--accent-color);
-    margin-bottom: 3rem;
-    border-bottom: 0.25rem solid var(--primary-color);
-    width: fit-content;
-    padding-bottom: 0.5rem;
+    & .bio-paragraph {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        font-weight: 500;
+
+        & strong {
+        /*    color: var(--primary-color);
+        
+        */}
+    }
+
 }
 
 .timeline {
